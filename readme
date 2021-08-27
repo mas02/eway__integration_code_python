@@ -1,0 +1,9 @@
+1:-eway.py file is main script. syntax for execute the script is "python3 eway.py". Before execute the script you need to follw below point.
+
+i) You need to put GSTIN info(gstin,eway_username,eway_password) in GstinInfo  in constant.py file.
+ii) You need to put credential details(username,password,client_id,client_secret) provide by masters india in accessTokenInfo in constant.py file.
+iii) You need to uncomment the function which you want to execute.
+iv) host variable in constant.py for sandbox will be "https://api.mastersindia.co". For production, it will be "https://proapi.mastersindia.co".
+v) NIC encryption public key(Eway_publickey.pem) file is different for both environment sandbox and production.
+vi) Generate E-waybill and cancel E-waybill JSON is present in constant.py. you need to change docNo to generate E-waybill.
+vii) At the time of generate, cancel and get E-waybill you need to pass auth_token, sek which is received in eway auth token API and flat_app_key which is used in eway auth token API.
